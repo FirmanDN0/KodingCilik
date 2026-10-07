@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Fredoka', cursive, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fefce8;
+    color: #1e293b;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-fun {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom Delightful Micro-animations for Kids */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(245, 158, 11, 0.8); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.animate-pop {
+  animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Duolingo-style Tactile 3D Buttons for Kids */
+.btn-3d-yellow {
+  background-color: #f59e0b;
+  border-bottom: 4px solid #b45309;
+  transition: all 0.1s ease-in-out;
+}
+.btn-3d-yellow:hover {
+  background-color: #fbbf24;
+}
+.btn-3d-yellow:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-3d-green {
+  background-color: #10b981;
+  border-bottom: 4px solid #047857;
+  transition: all 0.1s ease-in-out;
+}
+.btn-3d-green:hover {
+  background-color: #34d399;
+}
+.btn-3d-green:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-3d-purple {
+  background-color: #8b5cf6;
+  border-bottom: 4px solid #5b21b6;
+  transition: all 0.1s ease-in-out;
+}
+.btn-3d-purple:hover {
+  background-color: #a78bfa;
+}
+.btn-3d-purple:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-3d-blue {
+  background-color: #3b82f6;
+  border-bottom: 4px solid #1d4ed8;
+  transition: all 0.1s ease-in-out;
+}
+.btn-3d-blue:hover {
+  background-color: #60a5fa;
+}
+.btn-3d-blue:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-3d-rose {
+  background-color: #f43f5e;
+  border-bottom: 4px solid #be123c;
+  transition: all 0.1s ease-in-out;
+}
+.btn-3d-rose:hover {
+  background-color: #fb7185;
+}
+.btn-3d-rose:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fcd34d;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
